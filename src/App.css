@@ -1,0 +1,19 @@
+.App {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f6f8;
+}
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: Lato, sans-serif;
+    max-width: 1000px;
+}
+
+.contenedor-principal h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}

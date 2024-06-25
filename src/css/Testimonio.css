@@ -1,0 +1,27 @@
+.contenedor-testimonio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%)
+}
+.contenedor-texto-testimonio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-family: Lato, sans-serif;
+    gap: 20px;
+}
+.contenedor-texto-testimonio p {
+    margin: 0;
+}
+
+.nombre-testimonio, .cargo-testimonio {
+    font-size: 1.5rem;
+}
+
+.texto-testimonio {
+    font-size: 1.2rem;
+}
