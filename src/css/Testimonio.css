@@ -1,27 +1,66 @@
 .contenedor-testimonio {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%)
-}
-.contenedor-texto-testimonio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-    font-family: Lato, sans-serif;
-    gap: 20px;
-}
-.contenedor-texto-testimonio p {
-    margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%)
 }
 
-.nombre-testimonio, .cargo-testimonio {
-    font-size: 1.5rem;
+.contenedor-testimonio:nth-of-type(1) {
+  animation: insert 1s ease;
+}
+
+.contenedor-testimonio:nth-of-type(2) {
+  animation: insert 1s ease;
+  animation-delay: 0.5s;
+}
+
+.contenedor-testimonio:nth-of-type(3) {
+  animation: insert 1s ease;
+  animation-delay: 1s;
+}
+
+.contenedor-texto-testimonio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-family: Lato, sans-serif;
+  gap: 20px;
+}
+
+.contenedor-texto-testimonio p {
+  margin: 0;
+}
+
+.nombre-testimonio,
+.cargo-testimonio {
+  font-size: 1.5rem;
 }
 
 .texto-testimonio {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
+}
+
+@keyframes insert {
+  from {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 864px) {
+  .contenedor-testimonio {
+    flex-direction: column;
+  }
+
+  .contenedor-texto-testimonio {
+    padding: 20px;
+  }
 }
